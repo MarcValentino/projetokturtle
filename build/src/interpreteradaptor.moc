@@ -1,0 +1,212 @@
+/****************************************************************************
+** Meta object code from reading C++ file 'interpreteradaptor.h'
+**
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.9.5)
+**
+** WARNING! All changes made in this file will be lost!
+*****************************************************************************/
+
+#include "interpreteradaptor.h"
+#include <QtCore/qbytearray.h>
+#include <QtCore/qmetatype.h>
+#if !defined(Q_MOC_OUTPUT_REVISION)
+#error "The header file 'interpreteradaptor.h' doesn't include <QObject>."
+#elif Q_MOC_OUTPUT_REVISION != 67
+#error "This file was generated using the moc from 5.9.5. It"
+#error "cannot be used with the include files from this version of Qt."
+#error "(The moc has changed too much.)"
+#endif
+
+QT_BEGIN_MOC_NAMESPACE
+QT_WARNING_PUSH
+QT_WARNING_DISABLE_DEPRECATED
+struct qt_meta_stringdata_InterpreterAdaptor_t {
+    QByteArrayData data[15];
+    char stringdata0[782];
+};
+#define QT_MOC_LITERAL(idx, ofs, len) \
+    Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
+    qptrdiff(offsetof(qt_meta_stringdata_InterpreterAdaptor_t, stringdata0) + ofs \
+        - idx * sizeof(QByteArrayData)) \
+    )
+static const qt_meta_stringdata_InterpreterAdaptor_t qt_meta_stringdata_InterpreterAdaptor = {
+    {
+QT_MOC_LITERAL(0, 0, 18), // "InterpreterAdaptor"
+QT_MOC_LITERAL(1, 19, 15), // "D-Bus Interface"
+QT_MOC_LITERAL(2, 35, 27), // "org.kde.kturtle.Interpreter"
+QT_MOC_LITERAL(3, 63, 19), // "D-Bus Introspection"
+QT_MOC_LITERAL(4, 83, 597), // "  <interface name=\"org.kde.k..."
+QT_MOC_LITERAL(5, 627, 9), // "executing"
+QT_MOC_LITERAL(6, 637, 0), // ""
+QT_MOC_LITERAL(7, 638, 8), // "finished"
+QT_MOC_LITERAL(8, 647, 7), // "parsing"
+QT_MOC_LITERAL(9, 655, 17), // "encounteredErrors"
+QT_MOC_LITERAL(10, 673, 15), // "getErrorStrings"
+QT_MOC_LITERAL(11, 689, 10), // "initialize"
+QT_MOC_LITERAL(12, 700, 11), // "inputString"
+QT_MOC_LITERAL(13, 712, 9), // "interpret"
+QT_MOC_LITERAL(14, 722, 5) // "state"
+
+    },
+    "InterpreterAdaptor\0D-Bus Interface\0"
+    "org.kde.kturtle.Interpreter\0"
+    "D-Bus Introspection\0"
+    "  <interface name=\"org.kde.kturtle.Interpreter\">\n    <signal name=\""
+    "parsing\"/>\n    <signal name=\"executing\"/>\n    <signal name=\"fini"
+    "shed\"/>\n    <method name=\"interpret\"/>\n    <method name=\"state\""
+    ">\n      <arg direction=\"out\" type=\"i\"/>\n    </method>\n    <meth"
+    "od name=\"initialize\">\n      <arg direction=\"in\" type=\"s\" name=\""
+    "inputString\"/>\n    </method>\n    <method name=\"encounteredErrors\""
+    ">\n      <arg direction=\"out\" type=\"b\"/>\n    </method>\n    <meth"
+    "od name=\"getErrorStrings\">\n      <arg direction=\"out\" type=\"as\""
+    "/>\n    </method>\n  </interface>\n\0"
+    "executing\0\0finished\0parsing\0"
+    "encounteredErrors\0getErrorStrings\0"
+    "initialize\0inputString\0interpret\0state"
+};
+#undef QT_MOC_LITERAL
+
+static const uint qt_meta_data_InterpreterAdaptor[] = {
+
+ // content:
+       7,       // revision
+       0,       // classname
+       2,   14, // classinfo
+       8,   18, // methods
+       0,    0, // properties
+       0,    0, // enums/sets
+       0,    0, // constructors
+       0,       // flags
+       3,       // signalCount
+
+ // classinfo: key, value
+       1,    2,
+       3,    4,
+
+ // signals: name, argc, parameters, tag, flags
+       5,    0,   58,    6, 0x06 /* Public */,
+       7,    0,   59,    6, 0x06 /* Public */,
+       8,    0,   60,    6, 0x06 /* Public */,
+
+ // slots: name, argc, parameters, tag, flags
+       9,    0,   61,    6, 0x0a /* Public */,
+      10,    0,   62,    6, 0x0a /* Public */,
+      11,    1,   63,    6, 0x0a /* Public */,
+      13,    0,   66,    6, 0x0a /* Public */,
+      14,    0,   67,    6, 0x0a /* Public */,
+
+ // signals: parameters
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+
+ // slots: parameters
+    QMetaType::Bool,
+    QMetaType::QStringList,
+    QMetaType::Void, QMetaType::QString,   12,
+    QMetaType::Void,
+    QMetaType::Int,
+
+       0        // eod
+};
+
+void InterpreterAdaptor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+{
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        InterpreterAdaptor *_t = static_cast<InterpreterAdaptor *>(_o);
+        Q_UNUSED(_t)
+        switch (_id) {
+        case 0: _t->executing(); break;
+        case 1: _t->finished(); break;
+        case 2: _t->parsing(); break;
+        case 3: { bool _r = _t->encounteredErrors();
+            if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
+        case 4: { QStringList _r = _t->getErrorStrings();
+            if (_a[0]) *reinterpret_cast< QStringList*>(_a[0]) = std::move(_r); }  break;
+        case 5: _t->initialize((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 6: _t->interpret(); break;
+        case 7: { int _r = _t->state();
+            if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
+        default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            typedef void (InterpreterAdaptor::*_t)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&InterpreterAdaptor::executing)) {
+                *result = 0;
+                return;
+            }
+        }
+        {
+            typedef void (InterpreterAdaptor::*_t)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&InterpreterAdaptor::finished)) {
+                *result = 1;
+                return;
+            }
+        }
+        {
+            typedef void (InterpreterAdaptor::*_t)();
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&InterpreterAdaptor::parsing)) {
+                *result = 2;
+                return;
+            }
+        }
+    }
+}
+
+const QMetaObject InterpreterAdaptor::staticMetaObject = {
+    { &QDBusAbstractAdaptor::staticMetaObject, qt_meta_stringdata_InterpreterAdaptor.data,
+      qt_meta_data_InterpreterAdaptor,  qt_static_metacall, nullptr, nullptr}
+};
+
+
+const QMetaObject *InterpreterAdaptor::metaObject() const
+{
+    return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
+}
+
+void *InterpreterAdaptor::qt_metacast(const char *_clname)
+{
+    if (!_clname) return nullptr;
+    if (!strcmp(_clname, qt_meta_stringdata_InterpreterAdaptor.stringdata0))
+        return static_cast<void*>(this);
+    return QDBusAbstractAdaptor::qt_metacast(_clname);
+}
+
+int InterpreterAdaptor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+{
+    _id = QDBusAbstractAdaptor::qt_metacall(_c, _id, _a);
+    if (_id < 0)
+        return _id;
+    if (_c == QMetaObject::InvokeMetaMethod) {
+        if (_id < 8)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 8;
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        if (_id < 8)
+            *reinterpret_cast<int*>(_a[0]) = -1;
+        _id -= 8;
+    }
+    return _id;
+}
+
+// SIGNAL 0
+void InterpreterAdaptor::executing()
+{
+    QMetaObject::activate(this, &staticMetaObject, 0, nullptr);
+}
+
+// SIGNAL 1
+void InterpreterAdaptor::finished()
+{
+    QMetaObject::activate(this, &staticMetaObject, 1, nullptr);
+}
+
+// SIGNAL 2
+void InterpreterAdaptor::parsing()
+{
+    QMetaObject::activate(this, &staticMetaObject, 2, nullptr);
+}
+QT_WARNING_POP
+QT_END_MOC_NAMESPACE

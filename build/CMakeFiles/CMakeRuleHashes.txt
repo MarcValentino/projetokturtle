@@ -1,0 +1,10 @@
+# Hashes of file build rules.
+178b9a4c9239d1b9d304213f211f5091 CMakeFiles/fetch-translations
+dacc04352b16501b365be1fd465cfe65 CMakeFiles/uninstall
+ed9850b6596b4da5cf86aaaba32049ad doc/CMakeFiles/doc-index-cache-bz2
+52193f30dabafb0a39c57b0075125348 doc/index.cache.bz2
+ea3b6071d0b425d2a4bc085b5de23c16 releaseme
+e79d677e8635e7f91ad49dfd165499a5 src/CMakeFiles/kturtle_autogen
+918db5986c1e5ce64d39bc6e97ca781e src/interpreteradaptor.cpp
+6700ca3ba7d273db66404ff8ee71865e src/interpreteradaptor.moc
+4d8d13fa81e66496e6c0995dd3dbd62a src/qrc_resources.cpp

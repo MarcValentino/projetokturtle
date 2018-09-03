@@ -1,0 +1,15 @@
+kturtle-script-v1.0
+@(reset)
+@(canvassize) 200@(,)200
+@(go) 100@(,) 20
+@(turnleft) 180
+@(forward) 160
+@(go) 20@(,) 100
+@(turnleft) 90
+@(forward) 160
+@(go) 20@(,) 20 
+@(turnright) 45
+@(forward) 160 * 1.4
+@(go) 20@(,) 180
+@(turnleft) 90
+@(forward) 160 * 1.4
