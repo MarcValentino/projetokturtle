@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuasdasdasdsa">
+    <property name="title">
+     <string>Ar&amp;quivo</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="separator"/>
+    <addaction name="actionAdd"/>
+   </widget>
+   <widget class="QMenu" name="menuEdir">
+    <property name="title">
+     <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuTela">
+    <property name="title">
+     <string>Te&amp;la</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menueXECUTAR">
+    <property name="title">
+     <string>E&amp;xecutar</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuFerramentas">
+    <property name="title">
+     <string>Ferra&amp;mentas</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuCOnfigura_es">
+    <property name="title">
+     <string>CO&amp;nfigurações</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuAjuda">
+    <property name="title">
+     <string>A&amp;juda</string>
+    </property>
+   </widget>
+   <addaction name="menuasdasdasdsa"/>
+   <addaction name="menuEdir"/>
+   <addaction name="menuTela"/>
+   <addaction name="menueXECUTAR"/>
+   <addaction name="menuFerramentas"/>
+   <addaction name="menuCOnfigura_es"/>
+   <addaction name="menuAjuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionasdsadsad">
+   <property name="text">
+    <string>asdsadsad</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="actionAdd">
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
