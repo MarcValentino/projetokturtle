@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcelo/kturtle
+CMAKE_SOURCE_DIR = /home/marcelo/projetokturtle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcelo/kturtle/build
+CMAKE_BINARY_DIR = /home/marcelo/projetokturtle/build
 
 # Utility rule file for doc-index-cache-bz2.
 
@@ -63,8 +63,8 @@ doc/index.cache.bz2: ../doc/programming-reference.docbook
 doc/index.cache.bz2: ../doc/translator-guide.docbook
 doc/index.cache.bz2: ../doc/using-kturtle.docbook
 doc/index.cache.bz2: /usr/share/kf5/kdoctools/customization/kde-chunk.xsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating index.cache.bz2"
-	cd /home/marcelo/kturtle/doc && /usr/bin/meinproc5 --check --cache /home/marcelo/kturtle/build/doc//index.cache.bz2 index.docbook
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating index.cache.bz2"
+	cd /home/marcelo/projetokturtle/doc && /usr/bin/meinproc5 --check --cache /home/marcelo/projetokturtle/build/doc//index.cache.bz2 index.docbook
 
 doc-index-cache-bz2: doc/CMakeFiles/doc-index-cache-bz2
 doc-index-cache-bz2: doc/index.cache.bz2
@@ -78,10 +78,10 @@ doc/CMakeFiles/doc-index-cache-bz2.dir/build: doc-index-cache-bz2
 .PHONY : doc/CMakeFiles/doc-index-cache-bz2.dir/build
 
 doc/CMakeFiles/doc-index-cache-bz2.dir/clean:
-	cd /home/marcelo/kturtle/build/doc && $(CMAKE_COMMAND) -P CMakeFiles/doc-index-cache-bz2.dir/cmake_clean.cmake
+	cd /home/marcelo/projetokturtle/build/doc && $(CMAKE_COMMAND) -P CMakeFiles/doc-index-cache-bz2.dir/cmake_clean.cmake
 .PHONY : doc/CMakeFiles/doc-index-cache-bz2.dir/clean
 
 doc/CMakeFiles/doc-index-cache-bz2.dir/depend:
-	cd /home/marcelo/kturtle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelo/kturtle /home/marcelo/kturtle/doc /home/marcelo/kturtle/build /home/marcelo/kturtle/build/doc /home/marcelo/kturtle/build/doc/CMakeFiles/doc-index-cache-bz2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marcelo/projetokturtle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelo/projetokturtle /home/marcelo/projetokturtle/doc /home/marcelo/projetokturtle/build /home/marcelo/projetokturtle/build/doc /home/marcelo/projetokturtle/build/doc/CMakeFiles/doc-index-cache-bz2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : doc/CMakeFiles/doc-index-cache-bz2.dir/depend
 

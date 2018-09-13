@@ -1,8 +1,8 @@
-# Install script for directory: /home/marcelo/kturtle/icons
+# Install script for directory: /home/marcelo/projetokturtle/icons
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/marcelo/projetokturtle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -38,37 +38,37 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xkturtlex" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/128x128/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/kturtle/icons/128-apps-kturtle.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/128x128/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/projetokturtle/icons/128-apps-kturtle.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xkturtlex" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/16x16/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/kturtle/icons/16-apps-kturtle.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/16x16/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/projetokturtle/icons/16-apps-kturtle.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xkturtlex" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/22x22/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/kturtle/icons/22-apps-kturtle.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/22x22/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/projetokturtle/icons/22-apps-kturtle.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xkturtlex" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/32x32/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/kturtle/icons/32-apps-kturtle.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/32x32/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/projetokturtle/icons/32-apps-kturtle.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xkturtlex" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/48x48/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/kturtle/icons/48-apps-kturtle.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/48x48/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/projetokturtle/icons/48-apps-kturtle.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xkturtlex" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/64x64/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/kturtle/icons/64-apps-kturtle.png")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/icons/hicolor/64x64/apps" TYPE FILE RENAME "kturtle.png" FILES "/home/marcelo/projetokturtle/icons/64-apps-kturtle.png")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xkturtlex" OR NOT CMAKE_INSTALL_COMPONENT)
   
     set(DESTDIR_VALUE "$ENV{DESTDIR}")
     if (NOT DESTDIR_VALUE)
-        execute_process(COMMAND "/usr/bin/cmake" -E touch "/usr/local/share/icons/hicolor")
+        execute_process(COMMAND "/usr/bin/cmake" -E touch "/home/marcelo/projetokturtle/share/icons/hicolor")
         set(HAVE_GTK_UPDATE_ICON_CACHE_EXEC /usr/bin/gtk-update-icon-cache)
         if (HAVE_GTK_UPDATE_ICON_CACHE_EXEC)
-            execute_process(COMMAND /usr/bin/gtk-update-icon-cache -q -t -i . WORKING_DIRECTORY "/usr/local/share/icons/hicolor")
+            execute_process(COMMAND /usr/bin/gtk-update-icon-cache -q -t -i . WORKING_DIRECTORY "/home/marcelo/projetokturtle/share/icons/hicolor")
         endif ()
     endif (NOT DESTDIR_VALUE)
     

@@ -27,7 +27,7 @@
 const int SPRITE_SIZE = 30;
 
 Sprite::Sprite()
-	: QGraphicsSvgItem(":turtle_grey.svg")
+        : QGraphicsSvgItem(":turtle.svg")
 {
 	m_angle = 0;
 	m_speed = 0;

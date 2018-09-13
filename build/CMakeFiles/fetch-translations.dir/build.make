@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcelo/kturtle
+CMAKE_SOURCE_DIR = /home/marcelo/projetokturtle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcelo/kturtle/build
+CMAKE_BINARY_DIR = /home/marcelo/projetokturtle/build
 
 # Utility rule file for fetch-translations.
 
@@ -54,14 +54,14 @@ CMAKE_BINARY_DIR = /home/marcelo/kturtle/build
 include CMakeFiles/fetch-translations.dir/progress.make
 
 CMakeFiles/fetch-translations: releaseme
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Downloading translations for kturtle branch trunk..."
-	git -C /home/marcelo/kturtle/build/releaseme pull
-	cmake -E remove_directory /home/marcelo/kturtle/build/po
-	cmake -E remove_directory /home/marcelo/kturtle/build/poqm
-	ruby /home/marcelo/kturtle/build/releaseme/fetchpo.rb --origin trunk --project kturtle --output-dir /home/marcelo/kturtle/build/po --output-poqm-dir /home/marcelo/kturtle/build/poqm /home/marcelo/kturtle
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Downloading translations for projetokturtle branch trunk..."
+	git -C /home/marcelo/projetokturtle/build/releaseme pull
+	cmake -E remove_directory /home/marcelo/projetokturtle/build/po
+	cmake -E remove_directory /home/marcelo/projetokturtle/build/poqm
+	ruby /home/marcelo/projetokturtle/build/releaseme/fetchpo.rb --origin trunk --project projetokturtle --output-dir /home/marcelo/projetokturtle/build/po --output-poqm-dir /home/marcelo/projetokturtle/build/poqm /home/marcelo/projetokturtle
 
 releaseme:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Fetching releaseme scripts to download translations..."
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Fetching releaseme scripts to download translations..."
 	git clone --depth 1 https://anongit.kde.org/releaseme.git
 
 fetch-translations: CMakeFiles/fetch-translations
@@ -80,6 +80,6 @@ CMakeFiles/fetch-translations.dir/clean:
 .PHONY : CMakeFiles/fetch-translations.dir/clean
 
 CMakeFiles/fetch-translations.dir/depend:
-	cd /home/marcelo/kturtle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelo/kturtle /home/marcelo/kturtle /home/marcelo/kturtle/build /home/marcelo/kturtle/build /home/marcelo/kturtle/build/CMakeFiles/fetch-translations.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marcelo/projetokturtle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelo/projetokturtle /home/marcelo/projetokturtle /home/marcelo/projetokturtle/build /home/marcelo/projetokturtle/build /home/marcelo/projetokturtle/build/CMakeFiles/fetch-translations.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fetch-translations.dir/depend
 

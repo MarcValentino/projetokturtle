@@ -1,8 +1,8 @@
-# Install script for directory: /home/marcelo/kturtle/doc
+# Install script for directory: /home/marcelo/projetokturtle/doc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/usr/local")
+  set(CMAKE_INSTALL_PREFIX "/home/marcelo/projetokturtle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,15 +39,15 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xkturtlex" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/HTML/en/kturtle" TYPE FILE FILES
-    "/home/marcelo/kturtle/build/doc//index.cache.bz2"
-    "/home/marcelo/kturtle/doc/./getting-started.docbook"
-    "/home/marcelo/kturtle/doc/./glossary.docbook"
-    "/home/marcelo/kturtle/doc/./index.docbook"
-    "/home/marcelo/kturtle/doc/./programming-reference.docbook"
-    "/home/marcelo/kturtle/doc/./translator-guide.docbook"
-    "/home/marcelo/kturtle/doc/./using-kturtle.docbook"
-    "/home/marcelo/kturtle/doc/./mainwindow.png"
-    "/home/marcelo/kturtle/doc/./mainwindow_flower_nrs.png"
+    "/home/marcelo/projetokturtle/build/doc//index.cache.bz2"
+    "/home/marcelo/projetokturtle/doc/./getting-started.docbook"
+    "/home/marcelo/projetokturtle/doc/./glossary.docbook"
+    "/home/marcelo/projetokturtle/doc/./index.docbook"
+    "/home/marcelo/projetokturtle/doc/./programming-reference.docbook"
+    "/home/marcelo/projetokturtle/doc/./translator-guide.docbook"
+    "/home/marcelo/projetokturtle/doc/./using-kturtle.docbook"
+    "/home/marcelo/projetokturtle/doc/./mainwindow.png"
+    "/home/marcelo/projetokturtle/doc/./mainwindow_flower_nrs.png"
     )
 endif()
 

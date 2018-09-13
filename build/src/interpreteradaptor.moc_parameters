@@ -1,10 +1,10 @@
--I/home/marcelo/kturtle/src
--I/home/marcelo/kturtle/build/src
+-I/home/marcelo/projetokturtle/src
+-I/home/marcelo/projetokturtle/build/src
 -D_GNU_SOURCE
 -D_LARGEFILE64_SOURCE
 -DQT_USE_FAST_CONCATENATION
 -DQT_USE_FAST_OPERATOR_PLUS
 -DQT_NO_URL_CAST_FROM_STRING
 -o
-/home/marcelo/kturtle/build/src/interpreteradaptor.moc
-/home/marcelo/kturtle/build/src/interpreteradaptor.h
+/home/marcelo/projetokturtle/build/src/interpreteradaptor.moc
+/home/marcelo/projetokturtle/build/src/interpreteradaptor.h

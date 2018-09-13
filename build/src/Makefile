@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcelo/kturtle
+CMAKE_SOURCE_DIR = /home/marcelo/projetokturtle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcelo/kturtle/build
+CMAKE_BINARY_DIR = /home/marcelo/projetokturtle/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/marcelo/kturtle/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/marcelo/kturtle/build/CMakeFiles /home/marcelo/kturtle/build/src/CMakeFiles/progress.marks
-	cd /home/marcelo/kturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcelo/kturtle/build/CMakeFiles 0
+	cd /home/marcelo/projetokturtle/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/marcelo/projetokturtle/build/CMakeFiles /home/marcelo/projetokturtle/build/src/CMakeFiles/progress.marks
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/marcelo/projetokturtle/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/marcelo/kturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/marcelo/kturtle/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/marcelo/projetokturtle/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/kturtle.dir/rule:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kturtle.dir/rule
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kturtle.dir/rule
 .PHONY : src/CMakeFiles/kturtle.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ kturtle: src/CMakeFiles/kturtle.dir/rule
 
 # fast build rule for target.
 kturtle/fast:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/build
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/build
 .PHONY : kturtle/fast
 
 # Convenience name for target.
 src/CMakeFiles/kturtle_autogen.dir/rule:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kturtle_autogen.dir/rule
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/kturtle_autogen.dir/rule
 .PHONY : src/CMakeFiles/kturtle_autogen.dir/rule
 
 # Convenience name for target.
@@ -194,7 +194,7 @@ kturtle_autogen: src/CMakeFiles/kturtle_autogen.dir/rule
 
 # fast build rule for target.
 kturtle_autogen/fast:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle_autogen.dir/build.make src/CMakeFiles/kturtle_autogen.dir/build
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle_autogen.dir/build.make src/CMakeFiles/kturtle_autogen.dir/build
 .PHONY : kturtle_autogen/fast
 
 canvas.o: canvas.cpp.o
@@ -203,7 +203,7 @@ canvas.o: canvas.cpp.o
 
 # target to build an object file
 canvas.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/canvas.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/canvas.cpp.o
 .PHONY : canvas.cpp.o
 
 canvas.i: canvas.cpp.i
@@ -212,7 +212,7 @@ canvas.i: canvas.cpp.i
 
 # target to preprocess a source file
 canvas.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/canvas.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/canvas.cpp.i
 .PHONY : canvas.cpp.i
 
 canvas.s: canvas.cpp.s
@@ -221,7 +221,7 @@ canvas.s: canvas.cpp.s
 
 # target to generate assembly for a file
 canvas.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/canvas.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/canvas.cpp.s
 .PHONY : canvas.cpp.s
 
 colorpicker.o: colorpicker.cpp.o
@@ -230,7 +230,7 @@ colorpicker.o: colorpicker.cpp.o
 
 # target to build an object file
 colorpicker.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/colorpicker.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/colorpicker.cpp.o
 .PHONY : colorpicker.cpp.o
 
 colorpicker.i: colorpicker.cpp.i
@@ -239,7 +239,7 @@ colorpicker.i: colorpicker.cpp.i
 
 # target to preprocess a source file
 colorpicker.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/colorpicker.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/colorpicker.cpp.i
 .PHONY : colorpicker.cpp.i
 
 colorpicker.s: colorpicker.cpp.s
@@ -248,7 +248,7 @@ colorpicker.s: colorpicker.cpp.s
 
 # target to generate assembly for a file
 colorpicker.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/colorpicker.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/colorpicker.cpp.s
 .PHONY : colorpicker.cpp.s
 
 console.o: console.cpp.o
@@ -257,7 +257,7 @@ console.o: console.cpp.o
 
 # target to build an object file
 console.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/console.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/console.cpp.o
 .PHONY : console.cpp.o
 
 console.i: console.cpp.i
@@ -266,7 +266,7 @@ console.i: console.cpp.i
 
 # target to preprocess a source file
 console.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/console.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/console.cpp.i
 .PHONY : console.cpp.i
 
 console.s: console.cpp.s
@@ -275,7 +275,7 @@ console.s: console.cpp.s
 
 # target to generate assembly for a file
 console.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/console.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/console.cpp.s
 .PHONY : console.cpp.s
 
 directiondialog.o: directiondialog.cpp.o
@@ -284,7 +284,7 @@ directiondialog.o: directiondialog.cpp.o
 
 # target to build an object file
 directiondialog.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/directiondialog.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/directiondialog.cpp.o
 .PHONY : directiondialog.cpp.o
 
 directiondialog.i: directiondialog.cpp.i
@@ -293,7 +293,7 @@ directiondialog.i: directiondialog.cpp.i
 
 # target to preprocess a source file
 directiondialog.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/directiondialog.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/directiondialog.cpp.i
 .PHONY : directiondialog.cpp.i
 
 directiondialog.s: directiondialog.cpp.s
@@ -302,7 +302,7 @@ directiondialog.s: directiondialog.cpp.s
 
 # target to generate assembly for a file
 directiondialog.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/directiondialog.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/directiondialog.cpp.s
 .PHONY : directiondialog.cpp.s
 
 editor.o: editor.cpp.o
@@ -311,7 +311,7 @@ editor.o: editor.cpp.o
 
 # target to build an object file
 editor.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/editor.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/editor.cpp.o
 .PHONY : editor.cpp.o
 
 editor.i: editor.cpp.i
@@ -320,7 +320,7 @@ editor.i: editor.cpp.i
 
 # target to preprocess a source file
 editor.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/editor.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/editor.cpp.i
 .PHONY : editor.cpp.i
 
 editor.s: editor.cpp.s
@@ -329,7 +329,7 @@ editor.s: editor.cpp.s
 
 # target to generate assembly for a file
 editor.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/editor.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/editor.cpp.s
 .PHONY : editor.cpp.s
 
 errordialog.o: errordialog.cpp.o
@@ -338,7 +338,7 @@ errordialog.o: errordialog.cpp.o
 
 # target to build an object file
 errordialog.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/errordialog.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/errordialog.cpp.o
 .PHONY : errordialog.cpp.o
 
 errordialog.i: errordialog.cpp.i
@@ -347,7 +347,7 @@ errordialog.i: errordialog.cpp.i
 
 # target to preprocess a source file
 errordialog.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/errordialog.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/errordialog.cpp.i
 .PHONY : errordialog.cpp.i
 
 errordialog.s: errordialog.cpp.s
@@ -356,7 +356,7 @@ errordialog.s: errordialog.cpp.s
 
 # target to generate assembly for a file
 errordialog.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/errordialog.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/errordialog.cpp.s
 .PHONY : errordialog.cpp.s
 
 highlighter.o: highlighter.cpp.o
@@ -365,7 +365,7 @@ highlighter.o: highlighter.cpp.o
 
 # target to build an object file
 highlighter.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/highlighter.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/highlighter.cpp.o
 .PHONY : highlighter.cpp.o
 
 highlighter.i: highlighter.cpp.i
@@ -374,7 +374,7 @@ highlighter.i: highlighter.cpp.i
 
 # target to preprocess a source file
 highlighter.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/highlighter.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/highlighter.cpp.i
 .PHONY : highlighter.cpp.i
 
 highlighter.s: highlighter.cpp.s
@@ -383,7 +383,7 @@ highlighter.s: highlighter.cpp.s
 
 # target to generate assembly for a file
 highlighter.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/highlighter.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/highlighter.cpp.s
 .PHONY : highlighter.cpp.s
 
 inspector.o: inspector.cpp.o
@@ -392,7 +392,7 @@ inspector.o: inspector.cpp.o
 
 # target to build an object file
 inspector.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/inspector.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/inspector.cpp.o
 .PHONY : inspector.cpp.o
 
 inspector.i: inspector.cpp.i
@@ -401,7 +401,7 @@ inspector.i: inspector.cpp.i
 
 # target to preprocess a source file
 inspector.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/inspector.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/inspector.cpp.i
 .PHONY : inspector.cpp.i
 
 inspector.s: inspector.cpp.s
@@ -410,7 +410,7 @@ inspector.s: inspector.cpp.s
 
 # target to generate assembly for a file
 inspector.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/inspector.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/inspector.cpp.s
 .PHONY : inspector.cpp.s
 
 interpreter/echoer.o: interpreter/echoer.cpp.o
@@ -419,7 +419,7 @@ interpreter/echoer.o: interpreter/echoer.cpp.o
 
 # target to build an object file
 interpreter/echoer.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o
 .PHONY : interpreter/echoer.cpp.o
 
 interpreter/echoer.i: interpreter/echoer.cpp.i
@@ -428,7 +428,7 @@ interpreter/echoer.i: interpreter/echoer.cpp.i
 
 # target to preprocess a source file
 interpreter/echoer.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.i
 .PHONY : interpreter/echoer.cpp.i
 
 interpreter/echoer.s: interpreter/echoer.cpp.s
@@ -437,7 +437,7 @@ interpreter/echoer.s: interpreter/echoer.cpp.s
 
 # target to generate assembly for a file
 interpreter/echoer.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.s
 .PHONY : interpreter/echoer.cpp.s
 
 interpreter/errormsg.o: interpreter/errormsg.cpp.o
@@ -446,7 +446,7 @@ interpreter/errormsg.o: interpreter/errormsg.cpp.o
 
 # target to build an object file
 interpreter/errormsg.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o
 .PHONY : interpreter/errormsg.cpp.o
 
 interpreter/errormsg.i: interpreter/errormsg.cpp.i
@@ -455,7 +455,7 @@ interpreter/errormsg.i: interpreter/errormsg.cpp.i
 
 # target to preprocess a source file
 interpreter/errormsg.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.i
 .PHONY : interpreter/errormsg.cpp.i
 
 interpreter/errormsg.s: interpreter/errormsg.cpp.s
@@ -464,7 +464,7 @@ interpreter/errormsg.s: interpreter/errormsg.cpp.s
 
 # target to generate assembly for a file
 interpreter/errormsg.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.s
 .PHONY : interpreter/errormsg.cpp.s
 
 interpreter/executer.o: interpreter/executer.cpp.o
@@ -473,7 +473,7 @@ interpreter/executer.o: interpreter/executer.cpp.o
 
 # target to build an object file
 interpreter/executer.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o
 .PHONY : interpreter/executer.cpp.o
 
 interpreter/executer.i: interpreter/executer.cpp.i
@@ -482,7 +482,7 @@ interpreter/executer.i: interpreter/executer.cpp.i
 
 # target to preprocess a source file
 interpreter/executer.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.i
 .PHONY : interpreter/executer.cpp.i
 
 interpreter/executer.s: interpreter/executer.cpp.s
@@ -491,7 +491,7 @@ interpreter/executer.s: interpreter/executer.cpp.s
 
 # target to generate assembly for a file
 interpreter/executer.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.s
 .PHONY : interpreter/executer.cpp.s
 
 interpreter/interpreter.o: interpreter/interpreter.cpp.o
@@ -500,7 +500,7 @@ interpreter/interpreter.o: interpreter/interpreter.cpp.o
 
 # target to build an object file
 interpreter/interpreter.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o
 .PHONY : interpreter/interpreter.cpp.o
 
 interpreter/interpreter.i: interpreter/interpreter.cpp.i
@@ -509,7 +509,7 @@ interpreter/interpreter.i: interpreter/interpreter.cpp.i
 
 # target to preprocess a source file
 interpreter/interpreter.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.i
 .PHONY : interpreter/interpreter.cpp.i
 
 interpreter/interpreter.s: interpreter/interpreter.cpp.s
@@ -518,7 +518,7 @@ interpreter/interpreter.s: interpreter/interpreter.cpp.s
 
 # target to generate assembly for a file
 interpreter/interpreter.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.s
 .PHONY : interpreter/interpreter.cpp.s
 
 interpreter/parser.o: interpreter/parser.cpp.o
@@ -527,7 +527,7 @@ interpreter/parser.o: interpreter/parser.cpp.o
 
 # target to build an object file
 interpreter/parser.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o
 .PHONY : interpreter/parser.cpp.o
 
 interpreter/parser.i: interpreter/parser.cpp.i
@@ -536,7 +536,7 @@ interpreter/parser.i: interpreter/parser.cpp.i
 
 # target to preprocess a source file
 interpreter/parser.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.i
 .PHONY : interpreter/parser.cpp.i
 
 interpreter/parser.s: interpreter/parser.cpp.s
@@ -545,7 +545,7 @@ interpreter/parser.s: interpreter/parser.cpp.s
 
 # target to generate assembly for a file
 interpreter/parser.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.s
 .PHONY : interpreter/parser.cpp.s
 
 interpreter/token.o: interpreter/token.cpp.o
@@ -554,7 +554,7 @@ interpreter/token.o: interpreter/token.cpp.o
 
 # target to build an object file
 interpreter/token.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o
 .PHONY : interpreter/token.cpp.o
 
 interpreter/token.i: interpreter/token.cpp.i
@@ -563,7 +563,7 @@ interpreter/token.i: interpreter/token.cpp.i
 
 # target to preprocess a source file
 interpreter/token.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/token.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/token.cpp.i
 .PHONY : interpreter/token.cpp.i
 
 interpreter/token.s: interpreter/token.cpp.s
@@ -572,7 +572,7 @@ interpreter/token.s: interpreter/token.cpp.s
 
 # target to generate assembly for a file
 interpreter/token.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/token.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/token.cpp.s
 .PHONY : interpreter/token.cpp.s
 
 interpreter/tokenizer.o: interpreter/tokenizer.cpp.o
@@ -581,7 +581,7 @@ interpreter/tokenizer.o: interpreter/tokenizer.cpp.o
 
 # target to build an object file
 interpreter/tokenizer.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o
 .PHONY : interpreter/tokenizer.cpp.o
 
 interpreter/tokenizer.i: interpreter/tokenizer.cpp.i
@@ -590,7 +590,7 @@ interpreter/tokenizer.i: interpreter/tokenizer.cpp.i
 
 # target to preprocess a source file
 interpreter/tokenizer.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.i
 .PHONY : interpreter/tokenizer.cpp.i
 
 interpreter/tokenizer.s: interpreter/tokenizer.cpp.s
@@ -599,7 +599,7 @@ interpreter/tokenizer.s: interpreter/tokenizer.cpp.s
 
 # target to generate assembly for a file
 interpreter/tokenizer.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.s
 .PHONY : interpreter/tokenizer.cpp.s
 
 interpreter/translator.o: interpreter/translator.cpp.o
@@ -608,7 +608,7 @@ interpreter/translator.o: interpreter/translator.cpp.o
 
 # target to build an object file
 interpreter/translator.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o
 .PHONY : interpreter/translator.cpp.o
 
 interpreter/translator.i: interpreter/translator.cpp.i
@@ -617,7 +617,7 @@ interpreter/translator.i: interpreter/translator.cpp.i
 
 # target to preprocess a source file
 interpreter/translator.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.i
 .PHONY : interpreter/translator.cpp.i
 
 interpreter/translator.s: interpreter/translator.cpp.s
@@ -626,7 +626,7 @@ interpreter/translator.s: interpreter/translator.cpp.s
 
 # target to generate assembly for a file
 interpreter/translator.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.s
 .PHONY : interpreter/translator.cpp.s
 
 interpreter/treenode.o: interpreter/treenode.cpp.o
@@ -635,7 +635,7 @@ interpreter/treenode.o: interpreter/treenode.cpp.o
 
 # target to build an object file
 interpreter/treenode.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o
 .PHONY : interpreter/treenode.cpp.o
 
 interpreter/treenode.i: interpreter/treenode.cpp.i
@@ -644,7 +644,7 @@ interpreter/treenode.i: interpreter/treenode.cpp.i
 
 # target to preprocess a source file
 interpreter/treenode.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.i
 .PHONY : interpreter/treenode.cpp.i
 
 interpreter/treenode.s: interpreter/treenode.cpp.s
@@ -653,7 +653,7 @@ interpreter/treenode.s: interpreter/treenode.cpp.s
 
 # target to generate assembly for a file
 interpreter/treenode.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.s
 .PHONY : interpreter/treenode.cpp.s
 
 interpreter/value.o: interpreter/value.cpp.o
@@ -662,7 +662,7 @@ interpreter/value.o: interpreter/value.cpp.o
 
 # target to build an object file
 interpreter/value.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o
 .PHONY : interpreter/value.cpp.o
 
 interpreter/value.i: interpreter/value.cpp.i
@@ -671,7 +671,7 @@ interpreter/value.i: interpreter/value.cpp.i
 
 # target to preprocess a source file
 interpreter/value.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/value.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/value.cpp.i
 .PHONY : interpreter/value.cpp.i
 
 interpreter/value.s: interpreter/value.cpp.s
@@ -680,7 +680,7 @@ interpreter/value.s: interpreter/value.cpp.s
 
 # target to generate assembly for a file
 interpreter/value.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/value.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreter/value.cpp.s
 .PHONY : interpreter/value.cpp.s
 
 interpreteradaptor.o: interpreteradaptor.cpp.o
@@ -689,7 +689,7 @@ interpreteradaptor.o: interpreteradaptor.cpp.o
 
 # target to build an object file
 interpreteradaptor.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o
 .PHONY : interpreteradaptor.cpp.o
 
 interpreteradaptor.i: interpreteradaptor.cpp.i
@@ -698,7 +698,7 @@ interpreteradaptor.i: interpreteradaptor.cpp.i
 
 # target to preprocess a source file
 interpreteradaptor.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.i
 .PHONY : interpreteradaptor.cpp.i
 
 interpreteradaptor.s: interpreteradaptor.cpp.s
@@ -707,7 +707,7 @@ interpreteradaptor.s: interpreteradaptor.cpp.s
 
 # target to generate assembly for a file
 interpreteradaptor.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.s
 .PHONY : interpreteradaptor.cpp.s
 
 kturtle_autogen/mocs_compilation.o: kturtle_autogen/mocs_compilation.cpp.o
@@ -716,7 +716,7 @@ kturtle_autogen/mocs_compilation.o: kturtle_autogen/mocs_compilation.cpp.o
 
 # target to build an object file
 kturtle_autogen/mocs_compilation.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o
 .PHONY : kturtle_autogen/mocs_compilation.cpp.o
 
 kturtle_autogen/mocs_compilation.i: kturtle_autogen/mocs_compilation.cpp.i
@@ -725,7 +725,7 @@ kturtle_autogen/mocs_compilation.i: kturtle_autogen/mocs_compilation.cpp.i
 
 # target to preprocess a source file
 kturtle_autogen/mocs_compilation.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.i
 .PHONY : kturtle_autogen/mocs_compilation.cpp.i
 
 kturtle_autogen/mocs_compilation.s: kturtle_autogen/mocs_compilation.cpp.s
@@ -734,7 +734,7 @@ kturtle_autogen/mocs_compilation.s: kturtle_autogen/mocs_compilation.cpp.s
 
 # target to generate assembly for a file
 kturtle_autogen/mocs_compilation.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.s
 .PHONY : kturtle_autogen/mocs_compilation.cpp.s
 
 main.o: main.cpp.o
@@ -743,7 +743,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/main.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -752,7 +752,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/main.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -761,7 +761,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/main.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 mainwindow.o: mainwindow.cpp.o
@@ -770,7 +770,7 @@ mainwindow.o: mainwindow.cpp.o
 
 # target to build an object file
 mainwindow.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/mainwindow.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/mainwindow.cpp.o
 .PHONY : mainwindow.cpp.o
 
 mainwindow.i: mainwindow.cpp.i
@@ -779,7 +779,7 @@ mainwindow.i: mainwindow.cpp.i
 
 # target to preprocess a source file
 mainwindow.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/mainwindow.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/mainwindow.cpp.i
 .PHONY : mainwindow.cpp.i
 
 mainwindow.s: mainwindow.cpp.s
@@ -788,7 +788,7 @@ mainwindow.s: mainwindow.cpp.s
 
 # target to generate assembly for a file
 mainwindow.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/mainwindow.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
 qrc_resources.o: qrc_resources.cpp.o
@@ -797,7 +797,7 @@ qrc_resources.o: qrc_resources.cpp.o
 
 # target to build an object file
 qrc_resources.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o
 .PHONY : qrc_resources.cpp.o
 
 qrc_resources.i: qrc_resources.cpp.i
@@ -806,7 +806,7 @@ qrc_resources.i: qrc_resources.cpp.i
 
 # target to preprocess a source file
 qrc_resources.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/qrc_resources.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/qrc_resources.cpp.i
 .PHONY : qrc_resources.cpp.i
 
 qrc_resources.s: qrc_resources.cpp.s
@@ -815,7 +815,7 @@ qrc_resources.s: qrc_resources.cpp.s
 
 # target to generate assembly for a file
 qrc_resources.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/qrc_resources.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/qrc_resources.cpp.s
 .PHONY : qrc_resources.cpp.s
 
 sprite.o: sprite.cpp.o
@@ -824,7 +824,7 @@ sprite.o: sprite.cpp.o
 
 # target to build an object file
 sprite.cpp.o:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/sprite.cpp.o
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/sprite.cpp.o
 .PHONY : sprite.cpp.o
 
 sprite.i: sprite.cpp.i
@@ -833,7 +833,7 @@ sprite.i: sprite.cpp.i
 
 # target to preprocess a source file
 sprite.cpp.i:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/sprite.cpp.i
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/sprite.cpp.i
 .PHONY : sprite.cpp.i
 
 sprite.s: sprite.cpp.s
@@ -842,7 +842,7 @@ sprite.s: sprite.cpp.s
 
 # target to generate assembly for a file
 sprite.cpp.s:
-	cd /home/marcelo/kturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/sprite.cpp.s
+	cd /home/marcelo/projetokturtle/build && $(MAKE) -f src/CMakeFiles/kturtle.dir/build.make src/CMakeFiles/kturtle.dir/sprite.cpp.s
 .PHONY : sprite.cpp.s
 
 # Help Target
@@ -943,6 +943,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/marcelo/kturtle/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/marcelo/projetokturtle/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

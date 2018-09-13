@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcelo/kturtle
+CMAKE_SOURCE_DIR = /home/marcelo/projetokturtle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcelo/kturtle/build
+CMAKE_BINARY_DIR = /home/marcelo/projetokturtle/build
 
 # Utility rule file for kturtle_autogen.
 
@@ -54,8 +54,8 @@ CMAKE_BINARY_DIR = /home/marcelo/kturtle/build
 include src/CMakeFiles/kturtle_autogen.dir/progress.make
 
 src/CMakeFiles/kturtle_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target kturtle"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/cmake -E cmake_autogen /home/marcelo/kturtle/build/src/CMakeFiles/kturtle_autogen.dir ""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target kturtle"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/cmake -E cmake_autogen /home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle_autogen.dir Debug
 
 kturtle_autogen: src/CMakeFiles/kturtle_autogen
 kturtle_autogen: src/CMakeFiles/kturtle_autogen.dir/build.make
@@ -68,10 +68,10 @@ src/CMakeFiles/kturtle_autogen.dir/build: kturtle_autogen
 .PHONY : src/CMakeFiles/kturtle_autogen.dir/build
 
 src/CMakeFiles/kturtle_autogen.dir/clean:
-	cd /home/marcelo/kturtle/build/src && $(CMAKE_COMMAND) -P CMakeFiles/kturtle_autogen.dir/cmake_clean.cmake
+	cd /home/marcelo/projetokturtle/build/src && $(CMAKE_COMMAND) -P CMakeFiles/kturtle_autogen.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/kturtle_autogen.dir/clean
 
 src/CMakeFiles/kturtle_autogen.dir/depend:
-	cd /home/marcelo/kturtle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelo/kturtle /home/marcelo/kturtle/src /home/marcelo/kturtle/build /home/marcelo/kturtle/build/src /home/marcelo/kturtle/build/src/CMakeFiles/kturtle_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marcelo/projetokturtle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelo/projetokturtle /home/marcelo/projetokturtle/src /home/marcelo/projetokturtle/build /home/marcelo/projetokturtle/build/src /home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/kturtle_autogen.dir/depend
 

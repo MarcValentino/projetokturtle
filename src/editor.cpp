@@ -79,7 +79,7 @@ Editor::Editor(QWidget *parent)
 	// calculate the bg color for the highlighted line
 	QColor bgColor = this->palette().brush(this->backgroundRole()).color();
 	highlightedLineBackgroundColor.setHsv(
-		LINE_HIGHLIGHT_COLOR.hue(),
+		bgColor.hue(), //WAS - LINE_HIGHLIGHT_COLOR.hue()
 		bgColor.saturation() + EXTRA_SATURATION,
 		bgColor.value());
 
@@ -158,9 +158,9 @@ bool Editor::openFile(const QUrl &_url)
 	QUrl url = _url;
 	if (maybeSave()) {
 		if (url.isEmpty()) {
-            url = QFileDialog::getOpenFileUrl(this, 
-                                              i18n("Open"), 
-                                              QUrl(), 
+            url = QFileDialog::getOpenFileUrl(this,
+                                              i18n("Open"),
+                                              QUrl(),
                                               QString("%1 (*.turtle);;%2 (*)").arg(i18n("Turtle code files")).arg(i18n("All files"))
                     );
 		}
@@ -208,7 +208,7 @@ bool Editor::saveFile(const QUrl &targetUrl)
 		tmp.setAutoRemove(false);
 		tmp.open();
 		QString filename = url.isLocalFile() ? url.toLocalFile() : tmp.fileName();
-	
+
 		QSaveFile *savefile = new QSaveFile(filename);
 		if (savefile->open(QIODevice::WriteOnly)) {
 			QTextStream outputStream(savefile);
@@ -229,7 +229,7 @@ bool Editor::saveFile(const QUrl &targetUrl)
 					QString defaultLook(Translator::instance()->defaultLook(t->look()));
 					unstranslated.append(QString("@(%1)").arg(defaultLook));
 				} else {
-					if (t->type() == Token::EndOfLine) 
+					if (t->type() == Token::EndOfLine)
 						pendingEOL = true;
 					else
 						unstranslated.append(t->look());
@@ -446,20 +446,20 @@ QString Editor::toHtml(const QString& title, const QString& lang)
 // bool Editor::eventFilter(QObject *obj, QEvent *event)
 // {
 // 	if (obj != editor) return QFrame::eventFilter(obj, event);
-// 
+//
 // 	if (event->type() == QEvent::ToolTip) {
 // 		QHelpEvent *helpEvent = static_cast<QHelpEvent *>(event);
-// 
+//
 // 		QTextCursor cursor = editor->cursorForPosition(helpEvent->pos());
 // 		cursor.movePosition(QTextCursor::StartOfWord, QTextCursor::MoveAnchor);
 // 		cursor.movePosition(QTextCursor::EndOfWord, QTextCursor::KeepAnchor);
-// 
+//
 // 		QString word = cursor.selectedText();
 // 		emit mouseHover(word);
 // 		emit mouseHover(helpEvent->pos(), word);
-// 
+//
 // 		// QToolTip::showText(helpEvent->globalPos(), word); // For testing
 // 	}
-// 
+//
 // 	return false;
 // }

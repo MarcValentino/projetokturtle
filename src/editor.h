@@ -38,7 +38,7 @@
 class QHBoxLayout;
 
 
-static const QColor LINE_HIGHLIGHT_COLOR(239, 247, 255);
+//static const QColor LINE_HIGHLIGHT_COLOR(239, 247, 255); fixed white line glitch on dark plasma themes
 static const QColor WORD_HIGHLIGHT_COLOR(255, 255, 156);
 static const QColor ERROR_HIGHLIGHT_COLOR(255, 200, 200);
 
@@ -59,7 +59,7 @@ class LineNumbers : public QWidget
 	public:
 		LineNumbers(QWidget *parent, QTextEdit *te) : QWidget(parent), editor(te), maxWidth(0) {}
         ~LineNumbers() Q_DECL_OVERRIDE {}
-	
+
 		void setFont(const QFont& f) { QWidget::setFont(f); }
 
 		void setWidth(int w) {
@@ -145,7 +145,13 @@ class TextEdit : public QTextEdit
 	protected:
 		void paintEvent(QPaintEvent *event) Q_DECL_OVERRIDE {
 			QPainter painter(viewport());
-			painter.fillRect(currentLineRect(), QBrush(LINE_HIGHLIGHT_COLOR));
+			QColor lineColor; // background color for current line
+			QColor bgColor = this->palette().brush(this->backgroundRole()).color();
+			lineColor.setHsv(
+			bgColor.hue(),
+			bgColor.saturation() + EXTRA_SATURATION,
+			bgColor.value()); //setting background for current line
+			painter.fillRect(currentLineRect(), QBrush(bgColor)); //WAS - painter.fillRect(currentLineRect(), QBrush(LINE_HIGHLIGHT_COLOR));
 			if (!currentWord.isNull())
 				foreach (const QRect &rect, coordsToRects(currentWord))
 					painter.fillRect(rect, QBrush(WORD_HIGHLIGHT_COLOR));

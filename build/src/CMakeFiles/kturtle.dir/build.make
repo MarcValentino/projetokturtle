@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/marcelo/kturtle
+CMAKE_SOURCE_DIR = /home/marcelo/projetokturtle
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/marcelo/kturtle/build
+CMAKE_BINARY_DIR = /home/marcelo/projetokturtle/build
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/kturtle.dir/depend.make
@@ -58,12 +58,12 @@ include src/CMakeFiles/kturtle.dir/progress.make
 include src/CMakeFiles/kturtle.dir/flags.make
 
 src/interpreteradaptor.moc: src/interpreteradaptor.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating interpreteradaptor.moc"
-	cd /home/marcelo/kturtle/build/src && /usr/lib/qt5/bin/moc @/home/marcelo/kturtle/build/src/interpreteradaptor.moc_parameters
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating interpreteradaptor.moc"
+	cd /home/marcelo/projetokturtle/build/src && /usr/lib/qt5/bin/moc @/home/marcelo/projetokturtle/build/src/interpreteradaptor.moc_parameters
 
 src/interpreteradaptor.cpp: ../src/interpreter/org.kde.kturtle.Interpreter.xml
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating interpreteradaptor.cpp, interpreteradaptor.h"
-	cd /home/marcelo/kturtle/build/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a interpreteradaptor -i interpreter/interpreter.h -l Interpreter /home/marcelo/kturtle/src/interpreter/org.kde.kturtle.Interpreter.xml
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating interpreteradaptor.cpp, interpreteradaptor.h"
+	cd /home/marcelo/projetokturtle/build/src && /usr/lib/qt5/bin/qdbusxml2cpp -m -a interpreteradaptor -i interpreter/interpreter.h -l Interpreter /home/marcelo/projetokturtle/src/interpreter/org.kde.kturtle.Interpreter.xml
 
 src/interpreteradaptor.h: src/interpreteradaptor.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate src/interpreteradaptor.h
@@ -71,21 +71,21 @@ src/interpreteradaptor.h: src/interpreteradaptor.cpp
 src/qrc_resources.cpp: ../src/turtle.svg
 src/qrc_resources.cpp: ../src/turtle_grey.svg
 src/qrc_resources.cpp: ../src/resources.qrc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating qrc_resources.cpp"
-	cd /home/marcelo/kturtle/build/src && /usr/lib/qt5/bin/rcc --name resources --output /home/marcelo/kturtle/build/src/qrc_resources.cpp /home/marcelo/kturtle/src/resources.qrc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating qrc_resources.cpp"
+	cd /home/marcelo/projetokturtle/build/src && /usr/lib/qt5/bin/rcc --name resources --output /home/marcelo/projetokturtle/build/src/qrc_resources.cpp /home/marcelo/projetokturtle/src/resources.qrc
 
 src/CMakeFiles/kturtle.dir/canvas.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/canvas.cpp.o: ../src/canvas.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/kturtle.dir/canvas.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/canvas.cpp.o -c /home/marcelo/kturtle/src/canvas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/kturtle.dir/canvas.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/canvas.cpp.o -c /home/marcelo/projetokturtle/src/canvas.cpp
 
 src/CMakeFiles/kturtle.dir/canvas.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/canvas.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/canvas.cpp > CMakeFiles/kturtle.dir/canvas.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/canvas.cpp > CMakeFiles/kturtle.dir/canvas.cpp.i
 
 src/CMakeFiles/kturtle.dir/canvas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/canvas.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/canvas.cpp -o CMakeFiles/kturtle.dir/canvas.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/canvas.cpp -o CMakeFiles/kturtle.dir/canvas.cpp.s
 
 src/CMakeFiles/kturtle.dir/canvas.cpp.o.requires:
 
@@ -100,16 +100,16 @@ src/CMakeFiles/kturtle.dir/canvas.cpp.o.provides.build: src/CMakeFiles/kturtle.d
 
 src/CMakeFiles/kturtle.dir/colorpicker.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/colorpicker.cpp.o: ../src/colorpicker.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/kturtle.dir/colorpicker.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/colorpicker.cpp.o -c /home/marcelo/kturtle/src/colorpicker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/kturtle.dir/colorpicker.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/colorpicker.cpp.o -c /home/marcelo/projetokturtle/src/colorpicker.cpp
 
 src/CMakeFiles/kturtle.dir/colorpicker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/colorpicker.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/colorpicker.cpp > CMakeFiles/kturtle.dir/colorpicker.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/colorpicker.cpp > CMakeFiles/kturtle.dir/colorpicker.cpp.i
 
 src/CMakeFiles/kturtle.dir/colorpicker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/colorpicker.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/colorpicker.cpp -o CMakeFiles/kturtle.dir/colorpicker.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/colorpicker.cpp -o CMakeFiles/kturtle.dir/colorpicker.cpp.s
 
 src/CMakeFiles/kturtle.dir/colorpicker.cpp.o.requires:
 
@@ -124,16 +124,16 @@ src/CMakeFiles/kturtle.dir/colorpicker.cpp.o.provides.build: src/CMakeFiles/ktur
 
 src/CMakeFiles/kturtle.dir/console.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/console.cpp.o: ../src/console.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/kturtle.dir/console.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/console.cpp.o -c /home/marcelo/kturtle/src/console.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/kturtle.dir/console.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/console.cpp.o -c /home/marcelo/projetokturtle/src/console.cpp
 
 src/CMakeFiles/kturtle.dir/console.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/console.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/console.cpp > CMakeFiles/kturtle.dir/console.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/console.cpp > CMakeFiles/kturtle.dir/console.cpp.i
 
 src/CMakeFiles/kturtle.dir/console.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/console.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/console.cpp -o CMakeFiles/kturtle.dir/console.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/console.cpp -o CMakeFiles/kturtle.dir/console.cpp.s
 
 src/CMakeFiles/kturtle.dir/console.cpp.o.requires:
 
@@ -148,16 +148,16 @@ src/CMakeFiles/kturtle.dir/console.cpp.o.provides.build: src/CMakeFiles/kturtle.
 
 src/CMakeFiles/kturtle.dir/directiondialog.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/directiondialog.cpp.o: ../src/directiondialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/kturtle.dir/directiondialog.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/directiondialog.cpp.o -c /home/marcelo/kturtle/src/directiondialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/kturtle.dir/directiondialog.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/directiondialog.cpp.o -c /home/marcelo/projetokturtle/src/directiondialog.cpp
 
 src/CMakeFiles/kturtle.dir/directiondialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/directiondialog.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/directiondialog.cpp > CMakeFiles/kturtle.dir/directiondialog.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/directiondialog.cpp > CMakeFiles/kturtle.dir/directiondialog.cpp.i
 
 src/CMakeFiles/kturtle.dir/directiondialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/directiondialog.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/directiondialog.cpp -o CMakeFiles/kturtle.dir/directiondialog.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/directiondialog.cpp -o CMakeFiles/kturtle.dir/directiondialog.cpp.s
 
 src/CMakeFiles/kturtle.dir/directiondialog.cpp.o.requires:
 
@@ -172,16 +172,16 @@ src/CMakeFiles/kturtle.dir/directiondialog.cpp.o.provides.build: src/CMakeFiles/
 
 src/CMakeFiles/kturtle.dir/highlighter.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/highlighter.cpp.o: ../src/highlighter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/kturtle.dir/highlighter.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/highlighter.cpp.o -c /home/marcelo/kturtle/src/highlighter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/kturtle.dir/highlighter.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/highlighter.cpp.o -c /home/marcelo/projetokturtle/src/highlighter.cpp
 
 src/CMakeFiles/kturtle.dir/highlighter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/highlighter.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/highlighter.cpp > CMakeFiles/kturtle.dir/highlighter.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/highlighter.cpp > CMakeFiles/kturtle.dir/highlighter.cpp.i
 
 src/CMakeFiles/kturtle.dir/highlighter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/highlighter.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/highlighter.cpp -o CMakeFiles/kturtle.dir/highlighter.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/highlighter.cpp -o CMakeFiles/kturtle.dir/highlighter.cpp.s
 
 src/CMakeFiles/kturtle.dir/highlighter.cpp.o.requires:
 
@@ -196,16 +196,16 @@ src/CMakeFiles/kturtle.dir/highlighter.cpp.o.provides.build: src/CMakeFiles/ktur
 
 src/CMakeFiles/kturtle.dir/inspector.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/inspector.cpp.o: ../src/inspector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/kturtle.dir/inspector.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/inspector.cpp.o -c /home/marcelo/kturtle/src/inspector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/kturtle.dir/inspector.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/inspector.cpp.o -c /home/marcelo/projetokturtle/src/inspector.cpp
 
 src/CMakeFiles/kturtle.dir/inspector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/inspector.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/inspector.cpp > CMakeFiles/kturtle.dir/inspector.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/inspector.cpp > CMakeFiles/kturtle.dir/inspector.cpp.i
 
 src/CMakeFiles/kturtle.dir/inspector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/inspector.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/inspector.cpp -o CMakeFiles/kturtle.dir/inspector.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/inspector.cpp -o CMakeFiles/kturtle.dir/inspector.cpp.s
 
 src/CMakeFiles/kturtle.dir/inspector.cpp.o.requires:
 
@@ -220,16 +220,16 @@ src/CMakeFiles/kturtle.dir/inspector.cpp.o.provides.build: src/CMakeFiles/kturtl
 
 src/CMakeFiles/kturtle.dir/editor.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/editor.cpp.o: ../src/editor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/kturtle.dir/editor.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/editor.cpp.o -c /home/marcelo/kturtle/src/editor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/kturtle.dir/editor.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/editor.cpp.o -c /home/marcelo/projetokturtle/src/editor.cpp
 
 src/CMakeFiles/kturtle.dir/editor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/editor.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/editor.cpp > CMakeFiles/kturtle.dir/editor.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/editor.cpp > CMakeFiles/kturtle.dir/editor.cpp.i
 
 src/CMakeFiles/kturtle.dir/editor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/editor.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/editor.cpp -o CMakeFiles/kturtle.dir/editor.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/editor.cpp -o CMakeFiles/kturtle.dir/editor.cpp.s
 
 src/CMakeFiles/kturtle.dir/editor.cpp.o.requires:
 
@@ -244,16 +244,16 @@ src/CMakeFiles/kturtle.dir/editor.cpp.o.provides.build: src/CMakeFiles/kturtle.d
 
 src/CMakeFiles/kturtle.dir/errordialog.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/errordialog.cpp.o: ../src/errordialog.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/kturtle.dir/errordialog.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/errordialog.cpp.o -c /home/marcelo/kturtle/src/errordialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object src/CMakeFiles/kturtle.dir/errordialog.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/errordialog.cpp.o -c /home/marcelo/projetokturtle/src/errordialog.cpp
 
 src/CMakeFiles/kturtle.dir/errordialog.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/errordialog.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/errordialog.cpp > CMakeFiles/kturtle.dir/errordialog.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/errordialog.cpp > CMakeFiles/kturtle.dir/errordialog.cpp.i
 
 src/CMakeFiles/kturtle.dir/errordialog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/errordialog.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/errordialog.cpp -o CMakeFiles/kturtle.dir/errordialog.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/errordialog.cpp -o CMakeFiles/kturtle.dir/errordialog.cpp.s
 
 src/CMakeFiles/kturtle.dir/errordialog.cpp.o.requires:
 
@@ -268,16 +268,16 @@ src/CMakeFiles/kturtle.dir/errordialog.cpp.o.provides.build: src/CMakeFiles/ktur
 
 src/CMakeFiles/kturtle.dir/main.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/kturtle.dir/main.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/main.cpp.o -c /home/marcelo/kturtle/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object src/CMakeFiles/kturtle.dir/main.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/main.cpp.o -c /home/marcelo/projetokturtle/src/main.cpp
 
 src/CMakeFiles/kturtle.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/main.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/main.cpp > CMakeFiles/kturtle.dir/main.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/main.cpp > CMakeFiles/kturtle.dir/main.cpp.i
 
 src/CMakeFiles/kturtle.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/main.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/main.cpp -o CMakeFiles/kturtle.dir/main.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/main.cpp -o CMakeFiles/kturtle.dir/main.cpp.s
 
 src/CMakeFiles/kturtle.dir/main.cpp.o.requires:
 
@@ -292,16 +292,16 @@ src/CMakeFiles/kturtle.dir/main.cpp.o.provides.build: src/CMakeFiles/kturtle.dir
 
 src/CMakeFiles/kturtle.dir/mainwindow.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/mainwindow.cpp.o: ../src/mainwindow.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/kturtle.dir/mainwindow.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/mainwindow.cpp.o -c /home/marcelo/kturtle/src/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object src/CMakeFiles/kturtle.dir/mainwindow.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/mainwindow.cpp.o -c /home/marcelo/projetokturtle/src/mainwindow.cpp
 
 src/CMakeFiles/kturtle.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/mainwindow.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/mainwindow.cpp > CMakeFiles/kturtle.dir/mainwindow.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/mainwindow.cpp > CMakeFiles/kturtle.dir/mainwindow.cpp.i
 
 src/CMakeFiles/kturtle.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/mainwindow.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/mainwindow.cpp -o CMakeFiles/kturtle.dir/mainwindow.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/mainwindow.cpp -o CMakeFiles/kturtle.dir/mainwindow.cpp.s
 
 src/CMakeFiles/kturtle.dir/mainwindow.cpp.o.requires:
 
@@ -316,16 +316,16 @@ src/CMakeFiles/kturtle.dir/mainwindow.cpp.o.provides.build: src/CMakeFiles/kturt
 
 src/CMakeFiles/kturtle.dir/sprite.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/sprite.cpp.o: ../src/sprite.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/kturtle.dir/sprite.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/sprite.cpp.o -c /home/marcelo/kturtle/src/sprite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object src/CMakeFiles/kturtle.dir/sprite.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/sprite.cpp.o -c /home/marcelo/projetokturtle/src/sprite.cpp
 
 src/CMakeFiles/kturtle.dir/sprite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/sprite.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/sprite.cpp > CMakeFiles/kturtle.dir/sprite.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/sprite.cpp > CMakeFiles/kturtle.dir/sprite.cpp.i
 
 src/CMakeFiles/kturtle.dir/sprite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/sprite.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/sprite.cpp -o CMakeFiles/kturtle.dir/sprite.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/sprite.cpp -o CMakeFiles/kturtle.dir/sprite.cpp.s
 
 src/CMakeFiles/kturtle.dir/sprite.cpp.o.requires:
 
@@ -340,16 +340,16 @@ src/CMakeFiles/kturtle.dir/sprite.cpp.o.provides.build: src/CMakeFiles/kturtle.d
 
 src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o: ../src/interpreter/echoer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o -c /home/marcelo/kturtle/src/interpreter/echoer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/echoer.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/echoer.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/echoer.cpp > CMakeFiles/kturtle.dir/interpreter/echoer.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/echoer.cpp > CMakeFiles/kturtle.dir/interpreter/echoer.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/echoer.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/echoer.cpp -o CMakeFiles/kturtle.dir/interpreter/echoer.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/echoer.cpp -o CMakeFiles/kturtle.dir/interpreter/echoer.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o.requires:
 
@@ -364,16 +364,16 @@ src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o: ../src/interpreter/errormsg.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o -c /home/marcelo/kturtle/src/interpreter/errormsg.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/errormsg.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/errormsg.cpp > CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/errormsg.cpp > CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/errormsg.cpp -o CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/errormsg.cpp -o CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o.requires:
 
@@ -388,16 +388,16 @@ src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o.provides.build: src/CMakeF
 
 src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o: ../src/interpreter/executer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/executer.cpp.o -c /home/marcelo/kturtle/src/interpreter/executer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/executer.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/executer.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/executer.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/executer.cpp > CMakeFiles/kturtle.dir/interpreter/executer.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/executer.cpp > CMakeFiles/kturtle.dir/interpreter/executer.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/executer.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/executer.cpp -o CMakeFiles/kturtle.dir/interpreter/executer.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/executer.cpp -o CMakeFiles/kturtle.dir/interpreter/executer.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o.requires:
 
@@ -412,16 +412,16 @@ src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o.provides.build: src/CMakeF
 
 src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o: ../src/interpreter/interpreter.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o -c /home/marcelo/kturtle/src/interpreter/interpreter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/interpreter.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/interpreter.cpp > CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/interpreter.cpp > CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/interpreter.cpp -o CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/interpreter.cpp -o CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o.requires:
 
@@ -436,16 +436,16 @@ src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o.provides.build: src/CMa
 
 src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o: ../src/interpreter/parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/parser.cpp.o -c /home/marcelo/kturtle/src/interpreter/parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/parser.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/parser.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/parser.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/parser.cpp > CMakeFiles/kturtle.dir/interpreter/parser.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/parser.cpp > CMakeFiles/kturtle.dir/interpreter/parser.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/parser.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/parser.cpp -o CMakeFiles/kturtle.dir/interpreter/parser.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/parser.cpp -o CMakeFiles/kturtle.dir/interpreter/parser.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o.requires:
 
@@ -460,16 +460,16 @@ src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o: ../src/interpreter/token.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/token.cpp.o -c /home/marcelo/kturtle/src/interpreter/token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/token.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/token.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/token.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/token.cpp > CMakeFiles/kturtle.dir/interpreter/token.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/token.cpp > CMakeFiles/kturtle.dir/interpreter/token.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/token.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/token.cpp -o CMakeFiles/kturtle.dir/interpreter/token.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/token.cpp -o CMakeFiles/kturtle.dir/interpreter/token.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o.requires:
 
@@ -484,16 +484,16 @@ src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o.provides.build: src/CMakeFile
 
 src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o: ../src/interpreter/tokenizer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o -c /home/marcelo/kturtle/src/interpreter/tokenizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/tokenizer.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/tokenizer.cpp > CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/tokenizer.cpp > CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/tokenizer.cpp -o CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/tokenizer.cpp -o CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o.requires:
 
@@ -508,16 +508,16 @@ src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o.provides.build: src/CMake
 
 src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o: ../src/interpreter/translator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/translator.cpp.o -c /home/marcelo/kturtle/src/interpreter/translator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/translator.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/translator.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/translator.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/translator.cpp > CMakeFiles/kturtle.dir/interpreter/translator.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/translator.cpp > CMakeFiles/kturtle.dir/interpreter/translator.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/translator.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/translator.cpp -o CMakeFiles/kturtle.dir/interpreter/translator.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/translator.cpp -o CMakeFiles/kturtle.dir/interpreter/translator.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o.requires:
 
@@ -532,16 +532,16 @@ src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o.provides.build: src/CMak
 
 src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o: ../src/interpreter/treenode.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o -c /home/marcelo/kturtle/src/interpreter/treenode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/treenode.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/treenode.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/treenode.cpp > CMakeFiles/kturtle.dir/interpreter/treenode.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/treenode.cpp > CMakeFiles/kturtle.dir/interpreter/treenode.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/treenode.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/treenode.cpp -o CMakeFiles/kturtle.dir/interpreter/treenode.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/treenode.cpp -o CMakeFiles/kturtle.dir/interpreter/treenode.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o.requires:
 
@@ -556,16 +556,16 @@ src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o.provides.build: src/CMakeF
 
 src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o: ../src/interpreter/value.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/value.cpp.o -c /home/marcelo/kturtle/src/interpreter/value.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreter/value.cpp.o -c /home/marcelo/projetokturtle/src/interpreter/value.cpp
 
 src/CMakeFiles/kturtle.dir/interpreter/value.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreter/value.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/src/interpreter/value.cpp > CMakeFiles/kturtle.dir/interpreter/value.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/src/interpreter/value.cpp > CMakeFiles/kturtle.dir/interpreter/value.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreter/value.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreter/value.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/src/interpreter/value.cpp -o CMakeFiles/kturtle.dir/interpreter/value.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/src/interpreter/value.cpp -o CMakeFiles/kturtle.dir/interpreter/value.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o.requires:
 
@@ -581,16 +581,16 @@ src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o.provides.build: src/CMakeFile
 src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o: src/interpreteradaptor.cpp
 src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o: src/interpreteradaptor.moc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o -c /home/marcelo/kturtle/build/src/interpreteradaptor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o -c /home/marcelo/projetokturtle/build/src/interpreteradaptor.cpp
 
 src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/interpreteradaptor.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/build/src/interpreteradaptor.cpp > CMakeFiles/kturtle.dir/interpreteradaptor.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/build/src/interpreteradaptor.cpp > CMakeFiles/kturtle.dir/interpreteradaptor.cpp.i
 
 src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/interpreteradaptor.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/build/src/interpreteradaptor.cpp -o CMakeFiles/kturtle.dir/interpreteradaptor.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/build/src/interpreteradaptor.cpp -o CMakeFiles/kturtle.dir/interpreteradaptor.cpp.s
 
 src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o.requires:
 
@@ -605,16 +605,16 @@ src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o.provides.build: src/CMakeFil
 
 src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o: src/qrc_resources.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/qrc_resources.cpp.o -c /home/marcelo/kturtle/build/src/qrc_resources.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/qrc_resources.cpp.o -c /home/marcelo/projetokturtle/build/src/qrc_resources.cpp
 
 src/CMakeFiles/kturtle.dir/qrc_resources.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/qrc_resources.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/build/src/qrc_resources.cpp > CMakeFiles/kturtle.dir/qrc_resources.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/build/src/qrc_resources.cpp > CMakeFiles/kturtle.dir/qrc_resources.cpp.i
 
 src/CMakeFiles/kturtle.dir/qrc_resources.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/qrc_resources.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/build/src/qrc_resources.cpp -o CMakeFiles/kturtle.dir/qrc_resources.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/build/src/qrc_resources.cpp -o CMakeFiles/kturtle.dir/qrc_resources.cpp.s
 
 src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o.requires:
 
@@ -629,16 +629,16 @@ src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o.provides.build: src/CMakeFiles/kt
 
 src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o: src/CMakeFiles/kturtle.dir/flags.make
 src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o: src/kturtle_autogen/mocs_compilation.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o -c /home/marcelo/kturtle/build/src/kturtle_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o"
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o -c /home/marcelo/projetokturtle/build/src/kturtle_autogen/mocs_compilation.cpp
 
 src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.i"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/kturtle/build/src/kturtle_autogen/mocs_compilation.cpp > CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.i
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/marcelo/projetokturtle/build/src/kturtle_autogen/mocs_compilation.cpp > CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.i
 
 src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.s"
-	cd /home/marcelo/kturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/kturtle/build/src/kturtle_autogen/mocs_compilation.cpp -o CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.s
+	cd /home/marcelo/projetokturtle/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/marcelo/projetokturtle/build/src/kturtle_autogen/mocs_compilation.cpp -o CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.s
 
 src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o.requires:
 
@@ -707,8 +707,8 @@ src/kturtle: src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o
 src/kturtle: src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o
 src/kturtle: src/CMakeFiles/kturtle.dir/build.make
 src/kturtle: src/CMakeFiles/kturtle.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcelo/kturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable kturtle"
-	cd /home/marcelo/kturtle/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kturtle.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/marcelo/projetokturtle/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable kturtle"
+	cd /home/marcelo/projetokturtle/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kturtle.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/kturtle.dir/build: src/kturtle
@@ -743,13 +743,13 @@ src/CMakeFiles/kturtle.dir/requires: src/CMakeFiles/kturtle.dir/kturtle_autogen/
 .PHONY : src/CMakeFiles/kturtle.dir/requires
 
 src/CMakeFiles/kturtle.dir/clean:
-	cd /home/marcelo/kturtle/build/src && $(CMAKE_COMMAND) -P CMakeFiles/kturtle.dir/cmake_clean.cmake
+	cd /home/marcelo/projetokturtle/build/src && $(CMAKE_COMMAND) -P CMakeFiles/kturtle.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/kturtle.dir/clean
 
 src/CMakeFiles/kturtle.dir/depend: src/interpreteradaptor.moc
 src/CMakeFiles/kturtle.dir/depend: src/interpreteradaptor.cpp
 src/CMakeFiles/kturtle.dir/depend: src/interpreteradaptor.h
 src/CMakeFiles/kturtle.dir/depend: src/qrc_resources.cpp
-	cd /home/marcelo/kturtle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelo/kturtle /home/marcelo/kturtle/src /home/marcelo/kturtle/build /home/marcelo/kturtle/build/src /home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/marcelo/projetokturtle/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/marcelo/projetokturtle /home/marcelo/projetokturtle/src /home/marcelo/projetokturtle/build /home/marcelo/projetokturtle/build/src /home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : src/CMakeFiles/kturtle.dir/depend
 

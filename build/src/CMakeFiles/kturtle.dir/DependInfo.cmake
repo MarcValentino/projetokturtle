@@ -4,30 +4,30 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/marcelo/kturtle/src/canvas.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/canvas.cpp.o"
-  "/home/marcelo/kturtle/src/colorpicker.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/colorpicker.cpp.o"
-  "/home/marcelo/kturtle/src/console.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/console.cpp.o"
-  "/home/marcelo/kturtle/src/directiondialog.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/directiondialog.cpp.o"
-  "/home/marcelo/kturtle/src/editor.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/editor.cpp.o"
-  "/home/marcelo/kturtle/src/errordialog.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/errordialog.cpp.o"
-  "/home/marcelo/kturtle/src/highlighter.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/highlighter.cpp.o"
-  "/home/marcelo/kturtle/src/inspector.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/inspector.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/echoer.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/errormsg.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/executer.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/interpreter.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/parser.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/token.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/tokenizer.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/translator.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/treenode.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o"
-  "/home/marcelo/kturtle/src/interpreter/value.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o"
-  "/home/marcelo/kturtle/build/src/interpreteradaptor.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o"
-  "/home/marcelo/kturtle/build/src/kturtle_autogen/mocs_compilation.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o"
-  "/home/marcelo/kturtle/src/main.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/main.cpp.o"
-  "/home/marcelo/kturtle/src/mainwindow.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/mainwindow.cpp.o"
-  "/home/marcelo/kturtle/build/src/qrc_resources.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o"
-  "/home/marcelo/kturtle/src/sprite.cpp" "/home/marcelo/kturtle/build/src/CMakeFiles/kturtle.dir/sprite.cpp.o"
+  "/home/marcelo/projetokturtle/src/canvas.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/canvas.cpp.o"
+  "/home/marcelo/projetokturtle/src/colorpicker.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/colorpicker.cpp.o"
+  "/home/marcelo/projetokturtle/src/console.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/console.cpp.o"
+  "/home/marcelo/projetokturtle/src/directiondialog.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/directiondialog.cpp.o"
+  "/home/marcelo/projetokturtle/src/editor.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/editor.cpp.o"
+  "/home/marcelo/projetokturtle/src/errordialog.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/errordialog.cpp.o"
+  "/home/marcelo/projetokturtle/src/highlighter.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/highlighter.cpp.o"
+  "/home/marcelo/projetokturtle/src/inspector.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/inspector.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/echoer.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/echoer.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/errormsg.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/errormsg.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/executer.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/executer.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/interpreter.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/interpreter.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/parser.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/parser.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/token.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/token.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/tokenizer.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/tokenizer.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/translator.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/translator.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/treenode.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/treenode.cpp.o"
+  "/home/marcelo/projetokturtle/src/interpreter/value.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreter/value.cpp.o"
+  "/home/marcelo/projetokturtle/build/src/interpreteradaptor.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/interpreteradaptor.cpp.o"
+  "/home/marcelo/projetokturtle/build/src/kturtle_autogen/mocs_compilation.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/kturtle_autogen/mocs_compilation.cpp.o"
+  "/home/marcelo/projetokturtle/src/main.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/main.cpp.o"
+  "/home/marcelo/projetokturtle/src/mainwindow.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/mainwindow.cpp.o"
+  "/home/marcelo/projetokturtle/build/src/qrc_resources.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/qrc_resources.cpp.o"
+  "/home/marcelo/projetokturtle/src/sprite.cpp" "/home/marcelo/projetokturtle/build/src/CMakeFiles/kturtle.dir/sprite.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -38,7 +38,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_DBUS_LIB"
   "QT_GUI_LIB"
   "QT_NETWORK_LIB"
-  "QT_NO_DEBUG"
   "QT_NO_URL_CAST_FROM_STRING"
   "QT_PRINTSUPPORT_LIB"
   "QT_SVG_LIB"
@@ -90,7 +89,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Pairs of files generated by the same build rule.
 set(CMAKE_MULTIPLE_OUTPUT_PAIRS
-  "/home/marcelo/kturtle/build/src/interpreteradaptor.h" "/home/marcelo/kturtle/build/src/interpreteradaptor.cpp"
+  "/home/marcelo/projetokturtle/build/src/interpreteradaptor.h" "/home/marcelo/projetokturtle/build/src/interpreteradaptor.cpp"
   )
 
 
