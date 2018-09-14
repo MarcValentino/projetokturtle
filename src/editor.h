@@ -38,7 +38,7 @@
 class QHBoxLayout;
 
 
-//static const QColor LINE_HIGHLIGHT_COLOR(239, 247, 255); fixed white line glitch on dark plasma themes
+static const QColor LINE_HIGHLIGHT_COLOR(239, 247, 255); //fixed white line glitch on dark plasma themes
 static const QColor WORD_HIGHLIGHT_COLOR(255, 255, 156);
 static const QColor ERROR_HIGHLIGHT_COLOR(255, 200, 200);
 
@@ -145,19 +145,29 @@ class TextEdit : public QTextEdit
 	protected:
 		void paintEvent(QPaintEvent *event) Q_DECL_OVERRIDE {
 			QPainter painter(viewport());
-			QColor lineColor; // background color for current line
+			QColor lineColor, errorColor, wordColor; // background color for current line, error highlighting and word highlighting
 			QColor bgColor = this->palette().brush(this->backgroundRole()).color();
 			lineColor.setHsv(
-			bgColor.hue(),
+			LINE_HIGHLIGHT_COLOR.hue(),
 			bgColor.saturation() + EXTRA_SATURATION,
 			bgColor.value()); //setting background for current line
-			painter.fillRect(currentLineRect(), QBrush(bgColor)); //WAS - painter.fillRect(currentLineRect(), QBrush(LINE_HIGHLIGHT_COLOR));
+
+			errorColor.setHsv(
+			ERROR_HIGHLIGHT_COLOR.hue(),
+			bgColor.saturation() + EXTRA_SATURATION,
+			bgColor.value()); // background for errors
+
+			wordColor.setHsv(
+			WORD_HIGHLIGHT_COLOR.hue(),
+			bgColor.saturation() + EXTRA_SATURATION,
+			bgColor.value()); //word highlighting background
+			painter.fillRect(currentLineRect(), QBrush(lineColor)); //WAS - painter.fillRect(currentLineRect(), QBrush(LINE_HIGHLIGHT_COLOR));
 			if (!currentWord.isNull())
 				foreach (const QRect &rect, coordsToRects(currentWord))
-					painter.fillRect(rect, QBrush(WORD_HIGHLIGHT_COLOR));
+					painter.fillRect(rect, QBrush(wordColor));
 			if (!currentError.isNull())
 				foreach (const QRect &rect, coordsToRects(currentError))
-					painter.fillRect(rect, QBrush(ERROR_HIGHLIGHT_COLOR));
+					painter.fillRect(rect, QBrush(errorColor));
 			painter.end();
 			QTextEdit::paintEvent(event);
 		}

@@ -79,7 +79,7 @@ Editor::Editor(QWidget *parent)
 	// calculate the bg color for the highlighted line
 	QColor bgColor = this->palette().brush(this->backgroundRole()).color();
 	highlightedLineBackgroundColor.setHsv(
-		bgColor.hue(), //WAS - LINE_HIGHLIGHT_COLOR.hue()
+		LINE_HIGHLIGHT_COLOR.hue(),
 		bgColor.saturation() + EXTRA_SATURATION,
 		bgColor.value());
 
